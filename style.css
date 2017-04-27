@@ -1,0 +1,72 @@
+/**
+ * Theme Name: Feather
+ * Description: A feather light theme
+ */
+
+body {
+	margin: 0;
+	font-family: roboto, sans-serif;
+	font-size: 15px;
+}
+
+#header {
+	background: #44f;
+	position: relative;
+	height: 50px;
+	box-shadow: 0 0 30px rgba(0,0,0,.5) !important;
+	margin: 0;
+	padding: 0;
+}
+
+#header.feather-admin-bar {
+	top: 0;
+	left: 0;
+	position: fixed !important;
+	width: 100% !important;
+	height: 50px !important;
+}
+
+#header h1 {
+	position: absolute;
+	margin: 0 !important;
+	padding: 0 !important;
+	top: 15px;
+	left: 20px;
+	line-height: 8px;
+}
+
+#header h1 a {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+#header ul.menu {
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+#header ul.menu li {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#header ul.menu li a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#wpadminbar {
+	height: 50px;
+}
+
+#wpwrap {
+	margin-top: 18px;
+}
