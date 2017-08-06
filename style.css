@@ -33,6 +33,10 @@ body {
 	padding: 0;
 }
 
+#content {
+	margin: 20px;
+}
+
 #footer .widget {
 	display: inline-block;
 	vertical-align: top;
