@@ -18,8 +18,4 @@
 <body>
  
 <div id="wrapper">
- 	<div id="header">
-		<!--<p class="description"><?php bloginfo('description'); ?></p>-->
-		<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-		<?php wp_nav_menu(array("menu"=>"main")); ?>
-	</div>
+	<?php featherHeader(); ?>
