@@ -27,6 +27,41 @@ body {
 	border-top: 1px solid red;
 }
 
+#footer h2.widget-title {
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+}
+
+#footer .widget {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#footer.widget-container-1 .widget {
+	width: 100%;
+}
+
+#footer.widget-container-2 .widget {
+	width: 50%;
+}
+
+#footer.widget-container-3 .widget {
+	width: 33%;
+}
+
+#footer.widget-container-4 .widget {
+	width: 25%;
+}
+
+#footer.widget-container-5 .widget {
+	width: 20%;
+}
+
+#footer ul {
+	padding-left: 20px;
+}
+
 .feather-header {
 	background: #44f;
 	position: relative !important;

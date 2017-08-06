@@ -56,6 +56,34 @@ add_action("wp_before_admin_bar_render",function() {
 });
 
 /**
+ * Widgets.
+ */
+add_action("widgets_init",function() {
+	register_sidebar(array(
+		'name'          => __( 'Footer', 'feather' ),
+		'id'            => 'feather-footer',
+		'description'   => '',
+	    'class'         => '',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>'
+	));
+});
+
+/**
+ * Get number of widgets, used by footer.
+ */
+function getNumWidgets($container) {
+	$widgets=wp_get_sidebars_widgets();
+
+	if (!isset($widgets[$container]))
+		return 0;
+
+	return count($widgets[$container]);
+}
+
+/**
  * Customizer.
  */
 add_action('customize_register',function($customize) {
